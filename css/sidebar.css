@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif; /* Make sure to use a consistent font */
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Change the background color to black */
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around; /* Space out the buttons evenly */
+    align-items: center; /* Center the items vertically */
+    background-color: #000;
+    border-bottom: 2px solid #555;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.tabs button {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 14px 20px;
+    cursor: pointer;
+    margin: 0;
+    flex: 1; /* Ensure each button takes up equal space */
+    text-align: center; /* Center text within buttons */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+.tabs button.active {
+    background-color: #ddd;
+}
+
+.tabs button:hover {
+    background-color:#7A288A; /* Slightly darker background on hover */
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #000;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    border: 1px solid #555; /* Dark gray border */
+    padding: 8px;
+    text-align: left;
+    background-color: #000; /* Dark gray background */
+}
+
+th {
+    background-color: #000;
+}
+
+.edit-button, .delete-button {
+    padding: 5px 10px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.edit-button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+}
+
+.delete-button {
+    background-color: #f44336; /* Red */
+    color: white;
+    border: none;
+}
+
+.logout-button {
+    background-color: #f44336; /* Red */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-left: auto;
+    display: block;
+}

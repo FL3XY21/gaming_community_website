@@ -1,0 +1,125 @@
+/* Container styling */
+.tab-content  {
+    text-align: center;
+    width: 80%;
+    max-width: 1000px;
+    background: rgba(0, 0, 0, 0.6); /* Slightly darker semi-transparent background */
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto; /* Centering the container horizontally */
+}
+
+/* Title styling */
+.tab-content h2 {
+    font-size: 28px; /* Slightly larger title font */
+    color: #faf0f0;
+    margin-bottom: 20px;
+    border-bottom: 3px solid rgb(185, 77, 185); /* Slightly thicker underline */
+    padding-bottom: 10px;
+}
+
+/* Table styling */
+.tab-content table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd; /* Light border around the table */
+}
+
+.tab-content th, .tab-content td {
+    padding: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.3); /* Slightly lighter border for table cells */
+    text-align: left;
+}
+
+.tab-content th {
+    background-color: rgb(185, 77, 185); /* Purple background for table headers */
+    color: #fff;
+}
+
+
+.tab-content tr td {
+    background-color: transparent; /* Alternating row colors */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .tab-content .tab-content-left {
+        width: 95%; /* Adjust width for smaller screens */
+    }
+
+    .tab-content table, .tab-content th, .tab-content td {
+        font-size: 14px; /* Smaller font size for smaller screens */
+    }
+}
+
+.info{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.info p{
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+/* Image gallery container */
+.image-gallery {
+    width: 100%; /* Adjust width as needed */
+    background:  rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Gallery title */
+.image-gallery h2 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgb(185, 77, 185); /* Underline */
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+/* Container for images */
+.image-gallery .image-container {
+    display: flex;
+    justify-content: space-between; /* Distributes space between images */
+    gap: 10px; /* Space between images */
+    width: 100%; /* Ensures the container takes full width of its parent */
+}
+
+/* Styling for each image */
+.image-gallery img {
+    flex: 1; /* Makes images grow to fill available space equally */
+    border: 2px solid #ddd;
+    max-width: 100%; /* Prevents images from exceeding container width */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+    border-radius: 10px; /* Adds rounded corners to images */
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .image-gallery {
+        width: 95%; /* Adjust width for smaller screens */
+    }
+
+    .image-gallery .image-container {
+        flex-direction: column; /* Stacks images vertically on smaller screens */
+        align-items: center;
+    }
+
+    .image-gallery img {
+        width: 90%; /* Adjust image width for better fit on smaller screens */
+    }
+}

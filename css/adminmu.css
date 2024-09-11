@@ -1,0 +1,79 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    min-height: 100vh;
+    background: url('mainbg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    width: 80%;
+    max-width: 1000px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 30px 40px;
+    text-align: center;
+}
+
+/* Apply to all headers */
+.wrapper h1, .wrapper h2, .wrapper h3 {
+    font-weight: bold;
+}
+
+/* Apply to other text elements if needed */
+.wrapper p, .wrapper td {
+    font-weight: bold;
+}
+
+
+.wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.wrapper th, .wrapper td {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    text-align: left;
+}
+
+.wrapper th {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.wrapper tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.wrapper a {
+    color: #b70d0d; /* Green */
+    text-decoration: none;
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+.wrapper a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: #f44336; /* Red for errors */
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: bold;
+}

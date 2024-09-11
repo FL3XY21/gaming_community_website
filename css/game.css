@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.info h1{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+    padding-top: 10px;
+}
+.tab-content {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+.tab-content h2 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgb(185, 77, 185); /* Pink underline for visual separation */
+    padding-bottom: 10px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    text-align: center;
+    color: #fff;
+}
+th {
+    background-color: rgb(185, 77, 185);
+}
+td {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.tab-content img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+tbody .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(185, 77, 185); /* Button color */
+    border: 1px solid rgb(92, 37, 92)f;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: rgb(73, 21, 73); /* Darker color on hover */
+    border-color: rgb(128, 51, 128);
+    text-decoration: none;;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 200px;
+    height: 113px; /* Maintain 16:9 aspect ratio */
+    overflow: hidden;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.video-container:hover iframe {
+    opacity: 1;
+}
+.video-container iframe {
+    opacity: 0;
+}

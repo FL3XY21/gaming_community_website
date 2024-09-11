@@ -1,0 +1,53 @@
+CREATE TABLE contact_submission (
+    id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    issue VARCHAR(255) DEFAULT NULL,
+    message TEXT DEFAULT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+CREATE TABLE games (
+    id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    item_name VARCHAR(100) NOT NULL,
+    description TEXT DEFAULT NULL,
+    price DECIMAL(10,2) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    image LONGBLOB DEFAULT NULL,
+    play_url VARCHAR(255) DEFAULT NULL,
+    video_url VARCHAR(100) DEFAULT NULL,
+    image_type VARCHAR(255) DEFAULT NULL
+);
+
+
+CREATE TABLE store_items (
+    id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    item_name VARCHAR(100) NOT NULL,
+    description TEXT DEFAULT NULL,
+    price DECIMAL(10,2) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    image LONGBLOB DEFAULT NULL,
+    image_type VARCHAR(50) DEFAULT NULL
+);
+
+
+CREATE TABLE tournaments (
+    tournament_id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    tournament_name VARCHAR(100) NOT NULL,
+    description VARCHAR(300) NOT NULL,
+    start_date DATE NOT NULL,
+    end_date DATE NOT NULL,
+    prizepool DECIMAL(20,4) DEFAULT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+CREATE TABLE users (
+    id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    verified TINYINT(1) DEFAULT 0
+);
